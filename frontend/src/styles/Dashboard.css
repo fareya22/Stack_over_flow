@@ -1,0 +1,192 @@
+/* src/styles/Dashboard.css */
+
+.dashboard {
+  width: 90%; /* Increased width for better responsiveness */
+  max-width: 1200px; /* Added max-width for larger screens */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.username-box {
+  padding: 10px 15px; /* Added horizontal padding */
+  background-color: #9b59b6;
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.notification-box {
+  position: relative;
+  cursor: pointer;
+}
+
+.notification-dot {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.posts-container {
+  margin-top: 20px;
+}
+
+.post-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px; /* Increased margin for spacing */
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease; /* Added transition for hover effect */
+}
+
+.post-item:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow on hover */
+}
+
+.post-item h3 {
+  margin: 0;
+}
+
+.author-name {
+  color: green;
+  font-style: italic;
+}
+
+.logout-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Added transition */
+}
+
+.logout-button:hover {
+  background-color: #c0392b;
+}
+
+.post-details {
+  background-color: #e6ffe6; /* Light green for inline post details */
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #b3e6b3;
+}
+
+.post-item button {
+  padding: 6px 12px; /* Adjusted padding for better balance */
+  font-size: 0.875rem; /* Adjusted font size for better readability */
+  border-radius: 4px; /* Slightly rounded corners */
+  background-color: #614caf; /* Example background color */
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Added transition */
+}
+
+.post-item button:hover {
+  background-color: #c33694; /* Darken on hover */
+}
+
+/* Enhanced Notification Prompt as a Card/Dialog Box */
+.notifications-prompt {
+  position: absolute;
+  top: 90px; /* Position slightly below the notification button */
+  right: 10px;
+  background-color: #ffffff;
+  padding: 15px 20px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ddd;
+  color: #333;
+  z-index: 100;
+  transition: all 0.3s ease; /* Smooth transition for visibility changes */
+}
+
+/* Title for the notification prompt */
+.notifications-prompt h4 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  color: #333;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 8px;
+}
+
+/* Style for each notification item */
+.notification-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 0.9rem;
+}
+
+.notification-item:last-child {
+  border-bottom: none;
+}
+
+.notification-unread p,
+.notification-read p {
+  margin: 0;
+}
+
+.notification-unread p {
+  color: red;
+  font-weight: bold; /* Highlight unread notifications */
+}
+
+.notification-read p {
+  color: green;
+}
+
+/* Style the "View Post" button */
+.notification-item button {
+  padding: 4px 10px;
+  font-size: 0.85rem;
+  border-radius: 5px;
+  background-color: #6c5ce7;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Added transition */
+}
+
+.notification-item button:hover {
+  background-color: rgb(66, 131, 169);
+}
+
+/* Style for the Close button in the notification prompt */
+.close-prompt-button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  width: 100%;
+  background-color: #eb5757;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease; /* Added transition */
+}
+
+.close-prompt-button:hover {
+  background-color: #c44141;
+}

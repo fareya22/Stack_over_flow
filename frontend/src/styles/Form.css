@@ -1,0 +1,77 @@
+/* src/styles/Form.css */
+
+.form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Darker background for better focus */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensure it overlays on top of other elements */
+}
+
+.form-container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px; /* Slightly larger border radius for a softer look */
+  width: 90%; /* Responsive width */
+  max-width: 400px; /* Max width for larger screens */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Softer shadow for depth */
+  text-align: center;
+  transition: transform 0.3s ease; /* Smooth transition for potential animations */
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem; /* Slightly larger font size for better readability */
+  color: #333; /* Darker color for the heading */
+}
+
+.form-container input {
+  width: 100%;
+  padding: 12px; /* Increased padding for a more spacious feel */
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem; /* Ensure font size is consistent */
+  transition: border-color 0.3s ease; /* Transition for border color change */
+}
+
+.form-container input:focus {
+  border-color: #0073e6; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.form-container button {
+  padding: 12px 20px; /* Adjusted padding for consistency */
+  margin-top: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Added transition for button */
+}
+
+button.close-btn {
+  background-color: #888;
+  color: white;
+  font-weight: bold; /* Bold text for visibility */
+}
+
+button.close-btn:hover {
+  background-color: #555;
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+button[type="submit"] {
+  background-color: #0073e6; /* Primary button color */
+  color: white;
+}
+
+button[type="submit"]:hover {
+  background-color: #005bb5; /* Darken on hover for feedback */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}

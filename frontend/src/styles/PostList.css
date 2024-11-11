@@ -1,0 +1,48 @@
+/* src/styles/PostList.css */
+
+.post-container {
+  border: 1px solid #ddd; /* Lighter border for a softer look */
+  padding: 15px; /* Increased padding for better content spacing */
+  margin-bottom: 20px; /* Increased margin for more space between posts */
+  border-radius: 8px; /* Slightly larger border radius for a smoother appearance */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+  background-color: #ffffff; /* White background for contrast */
+  transition: transform 0.2s ease; /* Smooth transition effect for hover */
+}
+
+.post-container:hover {
+  transform: translateY(-2px); /* Slight lift on hover for interactivity */
+}
+
+.view-post-button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px; /* Increased padding for better button size */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; /* Increased font size for readability */
+  margin-top: 10px; /* Adjusted margin for spacing */
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+.view-post-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+.post-details {
+  background-color: #f9f9f9; /* Light gray for a subtle contrast */
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0; /* Lighter border for a softer appearance */
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.post-details:hover {
+  background-color: #e6ffe6; /* Light green on hover for interactivity */
+}

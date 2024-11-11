@@ -1,0 +1,63 @@
+/* src/styles/PostDetailsModal.css */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Darker background for better focus */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure the modal is above other content */
+}
+
+.modal-content {
+  background: #ffffff; /* White background for contrast */
+  padding: 30px; /* Increased padding for better spacing */
+  border-radius: 10px; /* Slightly larger border radius for softness */
+  width: 100%; /* Full width for mobile responsiveness */
+  max-width: 500px; /* Maximum width for larger screens */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Softer shadow for depth */
+  transition: transform 0.3s ease; /* Smooth transition for potential animations */
+}
+
+.modal-content h2 {
+  margin: 0 0 15px 0; /* Margin for spacing */
+  font-size: 1.5rem; /* Larger font size for headers */
+  color: #333; /* Darker color for text */
+}
+
+.modal-content p {
+  color: #666; /* Subtle gray for body text */
+  line-height: 1.5; /* Improved readability */
+}
+
+.close-button {
+  background: #e74c3c; /* Bright red color for attention */
+  color: #fff;
+  padding: 10px 15px; /* Increased padding for comfort */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  font-size: 1rem; /* Consistent font size */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition effects */
+}
+
+.close-button:hover {
+  background: #c0392b; /* Darker red on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover for interaction feedback */
+}
+
+/* Optional: Add a responsive close button for smaller screens */
+@media (max-width: 600px) {
+  .modal-content {
+      padding: 20px; /* Reduced padding for smaller screens */
+  }
+  
+  .close-button {
+      padding: 8px 12px; /* Adjusted padding for smaller screens */
+      font-size: 0.9rem; /* Slightly smaller font size */
+  }
+}
